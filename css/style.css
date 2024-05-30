@@ -29,7 +29,7 @@ body{
 }
 @media (min-width:1200px){
     .container{
-        width: 1170px;
+        width: 1000px;
     }
 }
 /* Start  Header */
@@ -42,14 +42,19 @@ body{
     align-items: center;
     background-color: #f2f2f2;
     position: relative;
+   
 }
 @media (max-width:766px)
  { .header .container{
     margin: 0;
+    width: 120%;
+ }
+ .landing{
+    width: 125%;
  }
  .landing .intro-text{
-    margin-top: 120px;
-    margin-left: -75px;
+    margin-top: 190px;
+    margin-left: -180px;
  }
 
 }
@@ -169,7 +174,7 @@ body{
     .features{
         padding-top: 60px;
         padding-bottom: 60px; 
-        background-color: #f6f6f6;
+        background-color: #f2f2f2;
      
       }
       .features .container{
@@ -324,19 +329,40 @@ body{
   @media (max-width:765px){
     .aside .container{
         position: absolute;
-        left: 0;
+        left: -15px;
         top: 0;
     }
-    .aside .inputs .name input,
+    /* .aside .inputs .name input,
     .aside .inputs .Email input,
     .aside .inputs .Message input,
     .aside .submit input
     {
-        width: 250px;
+        width: 360x;
+    } */
+    .aside .inputs .name input,
+     .aside .inputs .Email input {
+        width: 220%;
+    }
+    .aside .inputs .Message input {
+        width: 500px;
+        height: 100px;
+    }
+    .aside .submit input {
+        width: 500px;
+    }
+    .features{
+        padding-top: 0;
+    }
+    .features .container::before{
+        margin-top: 0px;
+        width: 170%;
     }
     .features .feat{
-        margin-right: 25px;
+        margin-right: -49px;
         margin-bottom: 25px;
+        margin-top: 10px;
+        margin-left: 50px;
+
     }
     .article .words{
         margin-left: -65px; 
@@ -344,32 +370,38 @@ body{
     .article .words h4,
     .article .words p
     {
-        width: 250px;   
+        width: 500px; 
     }
     .article .icon{
+        width: 500px;
+         height: 44px;
         margin-left: -17px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
     .landing .intro-text h2{
-        width: 250px;
+        width: 385px;
     }
     .footer .cont .footerp{
-        width: 200px;
+        width: 400px;
     }
     .footer{
-        margin-top: 194px;
-        margin-left: 17px;
-        margin-right: 42px;
+        margin-top: 195px;
+        margin-left: 0;
+        margin-right: 0;
     
     }
     .footer .container{
         margin-left: 0;
+        width: 500px !important;
     }
   }
      /* End  aside */
 /* Start  footer */
 .footer{
     padding-top: 0;
-    padding-bottom: 60px; 
+    padding-bottom: 0px;
 
 }
 .footer .container{
