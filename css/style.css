@@ -371,13 +371,13 @@ body{
         margin-bottom: 0px !important;
     }
     .aside .inputs input{
-        width: 200%;
+        width: 200% !important;
     }
     .aside .inputs .Message  input{
-        width: 549px;
+        width: 549px !important;
     }
     .aside .sumbit{
-        width: 271px;
+        width: 271px !important;
     }
     .block .aside {
         margin-top: 250px;
