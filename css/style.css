@@ -152,18 +152,21 @@ body{
 
   }
   .landing .intro-text {
-      position: absolute;
-      left: 75%;
-      top: 50%;
-      text-align: center;
-      transform: translate(-50%, -50%);
-      width: 320px;
-      max-width: 100%;
+    position: absolute;
+    left: 66%;
+    top: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    max-width: 100%;
     }.landing .intro-text h1 {
       margin: 0;
       font-weight: bold;
       font-size: 50px;
       color: var(--main-color);
+    }
+    .landing .intro-text h2{
+        width: 420px;
     }
     .landing .intro-text p {
       font-size: 19px;
@@ -194,7 +197,7 @@ body{
         z-index: 8;
         position: relative;
         background-color: white;
-
+        margin-top: -30px;
         margin-right: -80px;
     
       }
@@ -220,166 +223,121 @@ body{
         content: "";
         background-color: #ff5722;
         position: absolute;
-        width: 130%;
+        width:125%;
         height: 115px;
-        margin-top: 5px;
+        margin-top: -60px;
     
       }
 
+      .block{
+        display: flex;
+        align-items: center;
+      }
+      .block .article{
+        width: 40%; 
+      }
+      .block  .article .container{
+        width: 600px !important;
+      }
+      .article .words h4,
+      .article .words p{
+        width: 160%;
+      }
     /* End  features */
 
-     /*Start article */
-     .article{
-        padding-top: 60px;
-        padding-bottom: 60px; 
-     }
-     .article .container{
-        width: 450px;
-        padding-left: 60px;
-     }
-     .article .words h4{
-        font-style: italic;
-        line-height: 1.8;
-     }
-     .article .words p{
-  
-        line-height: 1.8;
-     }
-     .article .icon{
-        width: 275px;
-        height: 44px;
-    
-     }
-     .article .icon a{
-        text-decoration: none;
-     }
-     .article .icon a i{
-        color: black;
+    /* Start  article */
+     .article .words{
+        width: 40%;
+
+    }
+    .article .icon {
         
-        padding-left: 20px;
-        font-size: 50px;
-     }
-     
-     /*End article */
+        font-size: 354%;
+       
+        }
+    .article .icon a{
 
+        text-decoration: none;  
+    
+        color:black ;
+    }
+    /* End article */
+    /* Start  article */
+    .aside .container{
+        width: 300px !important;
+    }
+    /* End  article */
 
-     /* Start  aside */
-     .aside{
+   .block .aside{
         padding-top: 60px;
         padding-bottom: 60px; 
         position: relative;
-     }
-     .aside .container{
-        position: absolute;
-        left: 55%;
-        top: -300%;
      }
      .aside .inputs{
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        width: 300px;
+        width: 301px;
    
     
     }
-
+    
     .aside .inputs div{
         margin-bottom: 25px;
     }
-    
     .aside .inputs input{
         height: 40px;
         outline: none;
         border-bottom: 3px solid black;
-    }
+        width: 400px;
 
+    }
     .aside .inputs .Message input{
         width: 400px;
         height: 100px;
     }
-    .aside .inputs .name >label{
-        position: absolute;
-        top: -20px;
 
-    }
-    .aside .inputs .Email >label{
-        position: absolute;
-        top: 47px;
+    .aside  .submit input{
+        width: 400px;
+        height: 40px;
+        font-weight: bold;
+        border:3px solid #ff5722;
+        border-radius: 30px;
+        color: white;
+        background-color: #ff5722;
+        transition: 0.3s;
+       
+     
+      }
+      .aside .submit input:hover{
+        background-color: black;
+        border:3px solid black;
+       }
+         
+
+
+
+
+
     
-    }
-    .aside .inputs .name input,
-    .aside .inputs .Email input{
-               width: 200%;
-    }
-  .aside  .submit input{
-    width: 400px;
-    height: 40px;
-    font-weight: bold;
-    border:3px solid #ff5722;
-    border-radius: 30px;
-    color: white;
-    background-color: #ff5722;
-    transition: 0.3s;
-   
- 
-  }
-  .aside .submit input:hover{
-   background-color: black;
-   border:3px solid black;
-  }
+
   @media (max-width:765px){
-    .aside .container{
-        position: absolute;
-        left: 3px;
-        top: 0;
-    }
-    /* .aside .inputs .name input,
-    .aside .inputs .Email input,
-    .aside .inputs .Message input,
-    .aside .submit input
-    {
-        width: 360x;
-    } */
-    .aside .inputs .name input,
-     .aside .inputs .Email input {
-        width: 200%;
-    }
-    .aside .inputs .Message input {
-        width: 460px;
-        height: 100px;
-    }
-    .aside .submit input {
-        width: 460px;
-    }
     .features{
         padding-top: 0;
     }
     .features .container::before{
         margin-top: 0px;
-        width: 170%;
+        width: 196%;
     }
     .features .feat{
-        margin-right: -49px;
+        margin-right: -10%;
         margin-bottom: 25px;
         margin-top: 10px;
-        margin-left: 50px;
+        margin-left: 34%;
 
     }
-    .article .words{
-        margin-left: -65px; 
-    }
-    .article .words h4,
-    .article .words p
-    {
-        width: 500px; 
-    }
-    .article .icon{
-        width: 500px;
-         height: 44px;
-        margin-left: -23px;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
+    .landing{
+        width: 139%;
     }
     .landing .intro-text h2{
         width: 385px;
@@ -388,16 +346,44 @@ body{
         width: 400px;
     }
     .footer{
-        margin-top: 195px;
+        margin-top: -65px;
         margin-left: 0;
         margin-right: 0;
     
     }
     .footer .container{
         margin-left: 0;
-        width: 500px !important;
+        width: 140% !important;
         height: 170px !important;
     }
+    .block .article {
+        width: 40%;
+        margin-top: -401px;
+    }
+    .block .article .words h4, .article .words p {
+        width: 239%;
+    }
+
+    .block.aside .inputs .name, 
+    .block.aside .inputs .Email, 
+    .block.aside .inputs .Message, 
+    .block.aside .inputs .sumbit {
+        margin-bottom: 0px !important;
+    }
+    .aside .inputs input{
+        width: 222%;
+    }
+    .aside .inputs .Message  input{
+        width: 607px;
+    }
+    .aside .sumbit{
+        width: 271px;
+    }
+    .block .aside {
+        margin-top: 250px;
+        margin-left: -193px;
+    }
+
   }
      /* End  aside */
 /* Start  footer */
@@ -409,7 +395,7 @@ body{
 .footer .container{
     background-color: #333333;
     width: 100%;
-    height: 300px;
+    height: 150px;
     position: relative;
     margin-left: 0;
 }
